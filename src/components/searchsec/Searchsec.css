@@ -1,0 +1,28 @@
+.searchsec {
+    margin: 40px 0;
+    .searchbar {
+        margin: 20px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .searchwrap {
+            border-radius: 25px;
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            gap: 10px;
+
+            & input {
+                width: 100%;
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+           
+        }
+    }
+}

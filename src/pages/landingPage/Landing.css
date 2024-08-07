@@ -1,0 +1,19 @@
+.SwiperAll {
+    transition: 0.7s ;
+    overflow: hidden;
+}
+
+.op0 {
+    opacity: 0;
+}
+
+.recomented{
+    padding: 20px 0;
+    & .heading{
+        & h2{
+            font-size: clamp(1.5rem, 1.3333rem + 0.8333vw, 2rem);
+        }
+    }
+}
+
+

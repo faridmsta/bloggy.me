@@ -1,0 +1,126 @@
+.carusel {
+    & .carousel-inner {
+        background-color: var(--primary);
+        border-radius: 15px 15px 0 0;
+        @media screen and (min-width:992px) {
+            border-radius: 15px 15px  0 15px;
+
+        }
+
+    }
+
+    & .text {
+        padding: 20px 0;
+
+        & h2 {
+            font-size: clamp(1.75rem, 1.4167rem + 1.6667vw, 2.75rem);
+            font-weight: bold;
+        }
+
+        & p {
+            font-size: clamp(0.75rem, 0.625rem + 0.625vw, 1.125rem);
+        }
+
+        @media screen and (min-width:992px) {
+            width: 70%;
+        }
+    }
+
+    & .imgWrap {
+        border-radius: 15px;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        @media screen and (min-width:992px) {
+            border-radius: 15px 15px  0 15px;
+            
+        }
+    }
+
+    & .controls {
+        display: flex;
+        flex-direction: column-reverse;
+
+        & .indicators {
+
+            position: relative;
+            padding: 15px 0;
+            border-radius: 0 0 15px 15px;
+            background-color: var(--primary);
+            display: flex;
+
+            @media screen and (min-width:992px) {
+                width: 30%;
+                align-items: center;
+                justify-content: center;
+                padding-bottom:  100px; ;
+            }
+        }
+
+        & a {
+            position: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & .carousel-indicators {
+            position: unset;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            padding: 15px 0;
+            margin: unset;
+
+            & button {
+                border: unset;
+                background-clip: unset;
+                position: unset;
+                display: unset;
+                padding: unset;
+                margin: unset;
+                height: 10px;
+                width: 10px;
+                background: none;
+                border-radius: 50%;
+                border: 2px solid white;
+
+            }
+
+            & button.active {
+                background: white;
+            }
+
+        }
+
+        & .moreBtn {
+            position: absolute;
+            top: -22px;
+            right: 20px;
+            background: white;
+            color: var(--primary);
+            border-radius: 4px;
+            width: 153px;
+            padding: 10px 16px;
+            text-decoration: none;
+            @media screen and (min-width:992px) {
+                top: unset;
+                bottom: 30px;
+                right: 50%;
+                transform: translateX(50%);
+
+            }
+
+        }
+
+        @media screen and (min-width:992px) {
+            flex-direction: row;
+            gap: 20px;
+        }
+    }
+}
