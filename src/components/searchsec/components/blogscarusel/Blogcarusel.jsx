@@ -6,7 +6,8 @@ import 'swiper/css/pagination';
 import './../blogscarusel/Blogcarusel.css';
 import nodata from './../icons/no-data-rafiki.svg'
 import { FreeMode } from 'swiper/modules';
-
+import { Link } from 'react-router-dom';
+import Blogcard from '../../../blogcard/Blogcard';
 
 
 
@@ -27,8 +28,8 @@ function Blogcarusel({ data, inputtxt }) {
     }, []);
 
     const filteredData = data.filter(item =>
-        item.header.toLowerCase().includes(inputtxt.toLowerCase()) ||
-        item.text.toLowerCase().includes(inputtxt.toLowerCase())
+        item.title.toLowerCase().includes(inputtxt.toLowerCase()) ||
+        item.content.toLowerCase().includes(inputtxt.toLowerCase())
     );
 
     return (
@@ -46,24 +47,9 @@ function Blogcarusel({ data, inputtxt }) {
 
                 </div>
             ) : (
-                filteredData.map((item) => (
-                    <SwiperSlide key={item.id}>
-                        <div className="up">
-                            <div className="imgwrap">
-                                <img src={item.img} alt="" />
-                            </div>
-                        </div>
-                        <div className="down">
-                            <div className="profile">
-                                <div className="ppwrap">
-                                    <img src={item.ppimg} alt="profile" />
-                                </div>
-                            </div>
-                            <div className="info">
-                                <h2>{item.header}</h2>
-                                <p>{item.text}</p>
-                            </div>
-                        </div>
+                filteredData.map((item,index) => (
+                    <SwiperSlide key={index} className="SblogCard" >
+                        <Blogcard item={item}   />
                     </SwiperSlide>
                 ))
             )}

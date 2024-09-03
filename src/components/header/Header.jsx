@@ -3,7 +3,7 @@ import './Header.css';
 import { NavLink } from 'react-router-dom';
 
 
-function Header() {
+function Header({ islog }) {
     const [ismenu, setIsmenu] = useState(false);
 
     const toggleMenu = (e) => {
@@ -29,10 +29,10 @@ function Header() {
                     <nav>
                         <ul>
                             <li>
-                                <NavLink>Home</NavLink>
+                                <NavLink to='/' >Home</NavLink>
                             </li>
                             <li>
-                                <NavLink>All blogs</NavLink>
+                                <NavLink to='/blogs' >All blogs</NavLink>
                             </li>
                             <li>
                                 <NavLink>Contact</NavLink>
@@ -40,13 +40,25 @@ function Header() {
                             <li>
                                 <NavLink>About Us</NavLink>
                             </li>
-                            <li>
-                                <NavLink>
-                                    <button>
-                                        Sign in
-                                    </button>
-                                </NavLink>
-                            </li>
+                            {
+                                islog ?
+                                    <li className='profilePic'>
+                                        <NavLink to='/profile'>
+                                            <div className="round">
+                                                <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_400,h_400/https://useqwitter.com/wp-content/uploads/2022/08/blank-twitter-icon.jpg" alt="" />
+                                            </div>
+                                        </NavLink>
+                                    </li>
+                                    :
+                                    <li className='sign-in'>
+                                        <NavLink to='/reg' >
+                                            <button>
+                                                Sign in
+                                            </button>
+                                        </NavLink>
+                                    </li>
+                            }
+
                         </ul>
                     </nav>
                 </div>
@@ -61,7 +73,7 @@ function Header() {
                                         <NavLink>Home</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink>All blogs</NavLink>
+                                        <NavLink to='/blogs' >All blogs</NavLink>
                                     </li>
                                     <li>
                                         <NavLink>Contact</NavLink>
@@ -69,13 +81,24 @@ function Header() {
                                     <li>
                                         <NavLink>About Us</NavLink>
                                     </li>
-                                    <li>
-                                        <NavLink>
-                                            <button>
-                                                Sign in
-                                            </button>
-                                        </NavLink>
-                                    </li>
+                                    {
+                                        islog ?
+                                            <li className='profilePic'>
+                                                <NavLink>
+                                                    <div className="round">
+                                                        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_lossy,ret_img,w_400,h_400/https://useqwitter.com/wp-content/uploads/2022/08/blank-twitter-icon.jpg" alt="" />
+                                                    </div>
+                                                </NavLink>
+                                            </li>
+                                            :
+                                            <li className='sign-in'>
+                                                <NavLink to='/profile' >
+                                                    <button>
+                                                        Sign in
+                                                    </button>
+                                                </NavLink>
+                                            </li>
+                                    }
                                 </ul>
                             </nav>
                         </div>

@@ -1,0 +1,160 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "category": "Tech",
+            "title": "What is new in 2024 Tech",
+            "img": "https://www.e-computers.co.uk/wp-content/uploads/2022/01/seyed-sina-fazeli-XP9JF6jyRGc-unsplash.jpg",
+            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author": {
+                "name": "Lane doe",
+                "email": "lane.doe@example.com",
+                "bio": "Lane is a tech enthusiast and a writer",
+                "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+            },
+            "date": {
+                "day": 12,
+                "month": 5,
+                "year": 2024
+            },
+            "likes": 23,
+            "comments": [
+                {
+                    "CAuthor": "",
+                    "content": "",
+                    "likes": 0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "category": "Biology",
+            "title": "How pollution is working?",
+            "img": "https://cdn.britannica.com/51/195951-050-8265B115/pollution-bags-plastics-ocean-food-packaging.jpg",
+            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author": {
+                "name": "Madina Babayeva",
+                "email": "madinamedicine@example.com",
+                "bio": "Rashad is a Biolagy enthusiast and a writer",
+                "ppimg": "https://www.shutterstock.com/image-photo/beauty-wearing-casual-profile-picture-260nw-1931220536.jpg"
+            },
+            "date": {
+                "day": 12,
+                "month": 5,
+                "year": 2024
+            },
+            "likes": 0,
+            "comments": [
+                {
+                    "CAuthor": "",
+                    "content": "",
+                    "likes": 0
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "category": "Food",
+            "title": "Cake for 1 minute",
+            "img": "https://static01.nyt.com/images/2023/10/27/multimedia/27cakerex-plzm/27cakerex-plzm-threeByTwoMediumAt2X.jpg",
+            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author": {
+                "name": "Rashad Bagirov",
+                "email": "bagrov1994@example.com",
+                "bio": "Rashad is a Food enthusiast and a writer",
+                "ppimg": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+            },
+            "date": {
+                "day": 12,
+                "month": 5,
+                "year": 2024
+            },
+            "likes": 3,
+            "comments": [
+                {
+                    "CAuthor": "",
+                    "content": "",
+                    "likes": 0
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "category": "Science",
+            "title": "Be math person in 1 month",
+            "img": "https://www.ednewsdaily.com/wp-content/uploads/2023/08/math_person_gettyImages-1391720645-980x663-1-660x400@2x.jpeg",
+            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author": {
+                "name": "Rashad Bagirov",
+                "email": "bagrov1994@example.com",
+                "bio": "Rashad is a Food enthusiast and a writer",
+                "ppimg": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+            },
+            "date": {
+                "day": 12,
+                "month": 5,
+                "year": 2024
+            },
+            "likes": 1,
+            "comments": [
+                {
+                    "CAuthor": "",
+                    "content": "",
+                    "likes": 0
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "category": "Other",
+            "title": "Top 10 Trach car",
+            "img": "https://www.cityautowreckers.com/wp-content/uploads/2021/06/old-rusted-car.jpg",
+            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author":  {
+                "name": "Lane doe",
+                "mail": "lane.doe@example.com",
+                "bio": "I’m Lane. I’m 24-year-old. I’m a Digital Product Designer who prioritizes simplicity and usability. Currently, I'm Digital Product Designer on Norma. Formerly Enrich Mobile, ASDC, TalentMondo, and MobileUpp. I love working on side projects, trying to improve myself on SwiftUI and Webflow.",
+                "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+            },
+            "date": {
+                "day": 12,
+                "month": 5,
+                "year": 2024
+            },
+            "likes": 10,
+            "comments": [
+                {
+                    "CAuthor": "",
+                    "content": "",
+                    "likes": 0
+                }
+            ]
+        }
+    ],
+    "users": [
+        {
+            "name": "Lane doe",
+            "username": "lanedoe",
+            "mail": "lane.doe@example.com",
+            "phone": "+994551112233",
+            "bio": "I’m Lane. I’m 24-year-old. I’m a Digital Product Designer who prioritizes simplicity and usability. Currently, I'm Digital Product Designer on Norma. Formerly Enrich Mobile, ASDC, TalentMondo, and MobileUpp. I love working on side projects, trying to improve myself on SwiftUI and Webflow.",
+            "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+        },
+        {
+            "name": "Rashad Bagirov",
+            "username": "b_rashad",
+            "mail": "bagrov1994@example.com",
+            "phone": "+994551112233",
+            "bio": "I’m Rashad. I’m 24-year-old. I’m a Digital Product Designer who prioritizes simplicity and usability. Currently, I'm Digital Product Designer on Norma. Formerly Enrich Mobile, ASDC, TalentMondo, and MobileUpp. I love working on side projects, trying to improve myself on SwiftUI and Webflow.",
+            "ppimg": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+        },
+        {
+            "name": "Madina Babayeva",
+            "username": "madish.b",
+            "mail": "madinamedicine@example.com",
+            "phone": "+994551112233",
+            "bio": "I’m Madina. I’m 24-year-old. I’m a Digital Product Designer who prioritizes simplicity and usability. Currently, I'm Digital Product Designer on Norma. Formerly Enrich Mobile, ASDC, TalentMondo, and MobileUpp. I love working on side projects, trying to improve myself on SwiftUI and Webflow.",
+            "ppimg": "https://www.shutterstock.com/image-photo/beauty-wearing-casual-profile-picture-260nw-1931220536.jpg"
+        }
+    ]
+}

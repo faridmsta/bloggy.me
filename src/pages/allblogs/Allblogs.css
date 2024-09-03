@@ -1,0 +1,65 @@
+.allblogs {
+    font-family: var(--font);
+
+    & .allblogsWrap {
+        & .searchsec {
+            margin: 40px 0;
+            position: relative;
+
+            .filterOpen {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0%;
+            }
+
+            .searchbar {
+                margin: 20px 0;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @media screen and (max-width:768px) {
+                    justify-content: left;
+
+                }
+
+                & .searchwrap {
+                    border-radius: 25px;
+                    width: 80%;
+                    max-width: 800px;
+                    display: flex;
+                    padding: 10px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    gap: 10px;
+
+
+                    & input {
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                    }
+
+                }
+            }
+        }
+
+        & .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3%;
+
+            @media screen and (max-width: 1024px ){
+                gap: 2%;
+                
+            }
+            @media screen and (max-width: 584px ){
+                gap: 0 %;
+                
+            }
+
+        }
+    }
+}

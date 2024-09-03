@@ -1,0 +1,37 @@
+& .inputbox {
+    font-family: var(--font);
+    position: relative;
+    width: 100%;
+    & label {
+        transition: 0.3s;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        font-size: clamp(0.625rem, 0.5536rem + 0.3571vw, 0.875rem);
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    
+    & input {
+        padding: 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--primary);
+    }
+
+}
+.focusedInputbox {
+    
+
+    & label {
+        top: 10%;
+        font-size: 0.7rem;
+    }
+}

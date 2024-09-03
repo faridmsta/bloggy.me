@@ -1,0 +1,54 @@
+.user{
+    font-family: var(--font);
+    & .backhome {
+        padding: 20px 0 15px;
+        & a{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            text-decoration: none;
+            color: #444444;
+        }
+    }
+    & .userWrap{
+        & .userInfo{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            & .image{
+                overflow: hidden;
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            & .right{
+                & h4{
+                    font-weight: bold;
+                }
+                & h5{
+                    color: #444444;
+                }
+            }
+        }
+        & .biografy{
+            color: rgba(0, 0, 0, 0.5);
+            padding: 20px 0;
+            font-size: clamp(0.75rem, 0.5714rem + 0.8929vw, 1.375rem);
+        }
+        & .contact{
+            & p{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                & svg{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

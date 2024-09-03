@@ -42,7 +42,7 @@ function Swiper({ items }) {
         key={item.src}
       >
         <div className="imgWrap">
-          <img src={item.src} alt={item.altText} />
+          <img src={item.img} alt={item.altText} />
         </div>
 
       </CarouselItem>
@@ -60,8 +60,8 @@ function Swiper({ items }) {
         {slides}
         <div className="controls">
           <div className="text">
-            <h2>{items[activeIndex].header}</h2>
-            <p>{items[activeIndex].text}</p>
+            <h2>{items[activeIndex]?.title}</h2>
+            <p>{items[activeIndex]?.content}</p>
           </div>
           <div className="indicators">
 
@@ -81,7 +81,7 @@ function Swiper({ items }) {
               onClickHandler={next}
             />
             <Link className='moreBtn' 
-              to={items[activeIndex].link}
+              to={`/blogs/${items[activeIndex]?.author}/${items[activeIndex]?.id}`}
             >More</Link>
           </div>
         </div>

@@ -7,7 +7,7 @@ import Searchsec from '../../components/searchsec/Searchsec.jsx';
 import Srcinput from './../../components/context/Datasearch.jsx';
 import Swiperofblogs from '../../components/swiperofblogs/Swiperofblogs.jsx';
 
-const items = [
+const caruselitems = [
   {
     src: imgswipe1,
     header: 'Blogname',
@@ -44,36 +44,175 @@ const items = [
 
 const recomentedData = [
   {
-    id: 1,
-    img: 'https://picsum.photos/id/2/400/300',
-    ppimg: 'https://blog-pixomatic.s3.appcnt.com/image/22/01/26/61f166e1e3b25/_orig/pixomatic_1572877090227.png',
-    header: 'Niyə proqramlasdirma?',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor...',
-  },
-  {
-    id: 2,
-    img: 'https://picsum.photos/id/633/400/300',
-    ppimg: 'https://kpopping.com/documents/97/0/1440/230902-I-LL-LIT-Yunah-for-Vogue-Korea-Profile-Photos-documents-2.jpeg?v=294df',
-    header: 'Hobbilərini qoru',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor...',
-  },
-  {
-    id: 3,
-    img: 'https://picsum.photos/id/132/400/300',
-    ppimg: 'https://plus.college.indiana.edu/images/profiles/profiles-768x768/assistant.jpg',
-    header: 'Bakıdaki yol problemi',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor...',
-  },
-  {
-    id: 4,
-    img: 'https://picsum.photos/id/999/400/300',
-    ppimg: 'https://assets.entrepreneur.com/content/3x2/2000/20150406145944-dos-donts-taking-perfect-linkedin-profile-picture-selfie-mobile-camera-2.jpeg?format=pjeg&auto=webp&crop=1:1',
-    header: 'Yeməyi belə sev',
-    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor...',
-  },
+    "id": 1,
+    "category": "Tech",
+    "title": "What is new in 2024 Tech",
+    "img": "https://www.e-computers.co.uk/wp-content/uploads/2022/01/seyed-sina-fazeli-XP9JF6jyRGc-unsplash.jpg",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    "author": {
+      "name": "Lane doe",
+      "email": "lane.doe@example.com",
+      "bio": "Lane is a tech enthusiast and a writer",
+      "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+    },
+    "date": {
+      "day": 12,
+      "month": 5,
+      "year": 2024
+    },
+    "likes": 0,
+    "comments": [
+      {
+        "CAuthor": "",
+        "content": "",
+        "likes": 0
+      }
+    ]
 
+  },
+  {
+    "id": 2,
+    "category": "Biology",
+    "title": "How pollution is working?",
+    "img": "https://cdn.britannica.com/51/195951-050-8265B115/pollution-bags-plastics-ocean-food-packaging.jpg",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    "author": {
+      "name": "Lane doe",
+      "email": "lane.doe@example.com",
+      "bio": "Lane is a tech enthusiast and a writer",
+      "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+    },
+    "date": {
+      "day": 12,
+      "month": 5,
+      "year": 2024
+    },
+    "likes": 0,
+    "comments": [
+      {
+        "CAuthor": "",
+        "content": "",
+        "likes": 0
+      }
+    ]
 
+  },
+  {
+    "id": 3,
+    "category": "Food",
+    "title": "Cake for 1 minute",
+    "img": "https://static01.nyt.com/images/2023/10/27/multimedia/27cakerex-plzm/27cakerex-plzm-threeByTwoMediumAt2X.jpg",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    "author": {
+      "name": "Lane doe",
+      "email": "lane.doe@example.com",
+      "bio": "Lane is a tech enthusiast and a writer",
+      "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+    },
+    "date": {
+      "day": 12,
+      "month": 5,
+      "year": 2024
+    },
+    "likes": 0,
+    "comments": [
+      {
+        "CAuthor": "",
+        "content": "",
+        "likes": 0
+      }
+    ]
+
+  }
 ]
+
+
+const lastdata = [
+  {
+    "id": 1,
+    "category": "Tech",
+    "title": "What is new in 2024 Tech",
+    "img": "https://www.e-computers.co.uk/wp-content/uploads/2022/01/seyed-sina-fazeli-XP9JF6jyRGc-unsplash.jpg",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    "author": {
+      "name": "Lane doe",
+      "email": "lane.doe@example.com",
+      "bio": "Lane is a tech enthusiast and a writer",
+      "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+    },
+    "date": {
+      "day": 12,
+      "month": 5,
+      "year": 2024
+    },
+    "likes": 0,
+    "comments": [
+      {
+        "CAuthor": "",
+        "content": "",
+        "likes": 0
+      }
+    ]
+
+  },
+  {
+    "id": 2,
+    "category": "Biology",
+    "title": "How pollution is working?",
+    "img": "https://cdn.britannica.com/51/195951-050-8265B115/pollution-bags-plastics-ocean-food-packaging.jpg",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    "author": {
+      "name": "Lane doe",
+      "email": "lane.doe@example.com",
+      "bio": "Lane is a tech enthusiast and a writer",
+      "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+    },
+    "date": {
+      "day": 12,
+      "month": 5,
+      "year": 2024
+    },
+    "likes": 0,
+    "comments": [
+      {
+        "CAuthor": "",
+        "content": "",
+        "likes": 0
+      }
+    ]
+
+  },
+  {
+    "id": 3,
+    "category": "Food",
+    "title": "Cake for 1 minute",
+    "img": "https://static01.nyt.com/images/2023/10/27/multimedia/27cakerex-plzm/27cakerex-plzm-threeByTwoMediumAt2X.jpg",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+    "author": {
+      "name": "Lane doe",
+      "email": "lane.doe@example.com",
+      "bio": "Lane is a tech enthusiast and a writer",
+      "ppimg": "https://img.freepik.com/premium-photo/close-up-portrait-smiling-young-woman-city_1048944-12068603.jpg"
+    },
+    "date": {
+      "day": 12,
+      "month": 5,
+      "year": 2024
+    },
+    "likes": 0,
+    "comments": [
+      {
+        "CAuthor": "",
+        "content": "",
+        "likes": 0
+      }
+    ]
+
+  }
+]
+
+
+
 
 function Landing() {
   const [swiperClass, setSwiperClass] = useState('');
@@ -103,6 +242,15 @@ function Landing() {
     }
   }, [contextData.searchinp]);
 
+  const [dataBlogs, setDataBlogs] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:8000/blogs')
+      .then(res => res.json())
+      .then(res => setDataBlogs(res))
+  }, [])
+
+  const swiperData = [...dataBlogs].sort((a, b) => b.likes - a.likes).slice(0, 4)
   return (
     <div>
       <section
@@ -113,18 +261,22 @@ function Landing() {
       >
         <div className="container">
           <div className="swiper">
-            <Swiper items={items} />
+            <Swiper items={swiperData} />
           </div>
         </div>
       </section>
-      <Searchsec />
+      <section>
+        <div className="container">
+          <Searchsec data={dataBlogs} />
+        </div>
+      </section>
       <section>
         <div className="container">
           <div className="recomented">
             <div className="heading">
               <h2>Recommended</h2>
             </div>
-            <Swiperofblogs data={recomentedData} />
+            <Swiperofblogs data={dataBlogs} />
           </div>
         </div>
       </section>
